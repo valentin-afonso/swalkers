@@ -1,24 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MyJourneys from './components/MyJourneys';
-import Params from './components/Params';
-import Profile from './components/Profile';
+import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
+
+
+const App = lazy(() => import('./App'));
+const Params = lazy(() => import('./components/Params'));
+const MyJourneys = lazy(() => import('./components/MyJourneys'));
+const Profile = lazy(() => import('./components/Profile'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/my-journeys" element={<MyJourneys />} />
-    <Route path="/profile" element={<Profile />} />
-    <Route path="/params" element={<Params />} />
-  </Routes>
-  <Navbar />
+   <Suspense fallback={<div>Loading...</div>}>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/my-journeys" element={<MyJourneys />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/params" element={<Params />} />
+    </Routes>
+    <Navbar />
+   </Suspense>
+
   </BrowserRouter>
 );
 
