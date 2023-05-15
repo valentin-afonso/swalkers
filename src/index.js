@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
 import MyJourneys from './components/MyJourneys';
 import Params from './components/Params';
 import Profile from './components/Profile';
