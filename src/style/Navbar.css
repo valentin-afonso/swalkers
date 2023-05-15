@@ -1,0 +1,7 @@
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul li a {
+    color: var(--text-light-color);
+}
