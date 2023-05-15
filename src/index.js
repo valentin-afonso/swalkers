@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
+import SplashScreen from './components/SplashScreen';
 
 
 const App = lazy(() => import('./App'));
@@ -15,7 +16,7 @@ const Profile = lazy(() => import('./components/Profile'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-   <Suspense fallback={<div>Loading...</div>}>
+   <Suspense fallback={<SplashScreen />}>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/my-journeys" element={<MyJourneys />} />

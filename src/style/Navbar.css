@@ -3,7 +3,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 .navbar ul {
     display: flex;
@@ -19,6 +19,8 @@
 .navbar ul li a {
     color: var(--text-light-color);
     display: inline-block;
+    font-size: .6rem;
+    margin-top: 5px;
 }
 .navbar ul li a::before {
     content: "";
