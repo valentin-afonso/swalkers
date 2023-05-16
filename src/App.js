@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './images/svg/logo.svg';
 import './App.css';
+import Map from './components/Map';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="header">
         <img src={logo} className="logo" alt="logo" />
       </header>
+      <Map />
     </div>
   );
 }
