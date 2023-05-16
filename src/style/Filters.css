@@ -1,0 +1,8 @@
+.filters_wrapper {
+    display: flex;
+    position: fixed;
+    top: 106px;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+}

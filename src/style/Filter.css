@@ -1,0 +1,24 @@
+.filter {
+    display: flex;
+    padding: 10px 6px;
+    border-radius: 10rem;
+    margin: 0 10px;
+    font-size: .9rem;
+    min-width: 100px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9); 
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9);
+}
+.filter_icon {
+    margin-right: 5px;
+}
+.filter.eclairage {
+    background-color: var(--color-yellow);
+    color: black;
+}
+.filter.incident {
+    background-color: var(--color-red);
+    color: var(--text-light-color);
+}
+.filter.refuge {
+    background-color: var(--color-blue);
+}
