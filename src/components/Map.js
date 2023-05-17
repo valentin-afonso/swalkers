@@ -8,11 +8,29 @@ function Map() {
     const [position, setPosition] = useState(null);
 
     useEffect(() => {
-        navigator.geolocation.getCurrentPosition((currentPosition) => {
-        const { latitude, longitude } = currentPosition.coords;
-        setPosition([latitude, longitude]);
-        });
-    }, []);
+        const getPosition = () => {
+          navigator.geolocation.getCurrentPosition(
+            (currentPosition) => {
+              const { latitude, longitude } = currentPosition.coords;
+              setPosition([latitude, longitude]);
+            },
+            (error) => {
+              // err.code === 1 user denied accessing the location
+              // err.code === 2 for any internal errors
+              // err.code === 3 error due to timeout
+              if (error.code === 1 || error.code === 2 || error.code === 3) {
+                // ECV Nantes coord by default
+                setPosition([47.2173485,-1.5678584]);
+              }
+            }
+          );
+        };
+        getPosition();
+      }, []);
+
+
+   
+
 
     // TILES exemple : 
     // https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png
