@@ -8,3 +8,6 @@
 #map .leaflet-container {
     height: 100%;
 }
+#map .leaflet-container .leaflet-left {
+    display: none;
+}
