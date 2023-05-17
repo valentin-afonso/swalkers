@@ -109,3 +109,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*
+GLOBAL
+*/
+h1 {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}

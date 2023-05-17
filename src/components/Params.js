@@ -1,8 +1,11 @@
 import React from 'react'
+import '../style/Params.css'
 
 function Params() {
   return (
-    <div>Params</div>
+    <div>
+      <h1>Params</h1>  
+    </div>
   )
 }
 

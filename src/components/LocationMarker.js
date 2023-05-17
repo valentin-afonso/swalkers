@@ -9,11 +9,11 @@ function LocationMarker({ position }) {
   const icon = new L.Icon({
     iconUrl: require('../images/marker-me.png'),
     iconRetinaUrl: require('../images/marker-me.png'),
-    iconAnchor: null,
-    popupAnchor: true,
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
     shadowUrl: null,
     shadowSize: null,
-    shadowAnchor: null,
+    shadowAnchor: [22, 94],
     iconSize: [86, 86],
     className: 'marker-me'
 });

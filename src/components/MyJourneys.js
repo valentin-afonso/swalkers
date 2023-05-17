@@ -1,8 +1,11 @@
 import React from 'react'
+import '../style/Journeys.css'
 
 function MyJourneys() {
   return (
-    <div>MyJourneys</div>
+    <div className='journeys'>
+      <h1>Mes trajets</h1>
+    </div>
   )
 }
 
