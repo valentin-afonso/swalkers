@@ -30,7 +30,7 @@ return (
     <ul>
         <li>
             {renderIcon('home', 'home', homeFilled, home)}
-            <Link to="/" className='link_libele' onClick={() => filledIcon('home')}>Home</Link>
+            <Link to="/home" className='link_libele' onClick={() => filledIcon('home')}>Home</Link>
         </li>
         <li>
             {renderIcon('journeys', 'my journeys', myjourneysFilled, myjourneys)}

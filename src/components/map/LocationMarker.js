@@ -7,8 +7,8 @@ import L from 'leaflet';
 
 function LocationMarker({ position }) {
   const icon = new L.Icon({
-    iconUrl: require('../images/marker-me.png'),
-    iconRetinaUrl: require('../images/marker-me.png'),
+    iconUrl: require('../../images/marker-me.png'),
+    iconRetinaUrl: require('../../images/marker-me.png'),
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
     shadowUrl: null,

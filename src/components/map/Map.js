@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import '../style/Map.css'
+import '../../style/Map.css'
 
 import { MapContainer, TileLayer } from 'react-leaflet'
 import LocationMarker from './LocationMarker';
 
 function Map() {
     const [position, setPosition] = useState(null);
-
+    /*
+    useMapEvents({
+        click: () => {
+          //... 
+        },
+    })
+    */
     useEffect(() => {
         const getPosition = () => {
-          navigator.geolocation.getCurrentPosition(
+          navigator.geolocation.watchPosition(
             (currentPosition) => {
               const { latitude, longitude } = currentPosition.coords;
               setPosition([latitude, longitude]);
@@ -28,9 +34,13 @@ function Map() {
         getPosition();
       }, []);
 
-
-   
-
+        
+        /*
+        //stop watching after 10 seconds
+        setTimeout(() => {
+            navigator.geolocation.clearWatch(id)
+        }, 10 * 1000)
+        */
 
     // TILES exemple : 
     // https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png

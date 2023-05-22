@@ -1,17 +1,16 @@
 import React from 'react';
-import './App.css';
-import Map from './components/Map';
-import Filters from './components/Filters';
-import Searchbar from './components/Searchbar';
+import './style/Authorization.css';
+import logo from './images/svg/logo.svg'
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="home">
-      <header className="header">
-        <Searchbar />
-        <Filters />
-      </header>
-      <Map />
+    <div className="authorization">
+      <img src={logo} className="logo" alt="swalkers" />
+      <div className='content'>
+        <p>Voulez-vous afficher votre position ?</p>
+        <Link to="/home" className='link_home'>Afficher ma position</Link>
+      </div>
     </div>
   );
 }

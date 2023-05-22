@@ -10,15 +10,17 @@ import SplashScreen from './components/SplashScreen';
 
 
 const App = lazy(() => import('./App'));
-const Params = lazy(() => import('./components/Params'));
-const MyJourneys = lazy(() => import('./components/MyJourneys'));
-const Profile = lazy(() => import('./components/Profile'));
+const Home = lazy(() => import('./components/pages/Home'));
+const Params = lazy(() => import('./components/pages/Params'));
+const MyJourneys = lazy(() => import('./components/pages/MyJourneys'));
+const Profile = lazy(() => import('./components/pages/Profile'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
    <Suspense fallback={<SplashScreen />}>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/my-journeys" element={<MyJourneys />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/params" element={<Params />} />
