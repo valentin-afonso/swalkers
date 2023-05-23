@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Params.css'
+import '../../style/Params.css'
 
 function Params() {
   return (

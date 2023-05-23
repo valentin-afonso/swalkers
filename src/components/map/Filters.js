@@ -1,9 +1,9 @@
 import React from 'react'
-import '../style/Filters.css'
+import '../../style/Filters.css'
 import Filter from './Filter'
-import iconIncident from '../images/svg/icon-incident.svg'
-import iconRefuge from '../images/svg/icon-refuge.svg'
-import iconEclairage from '../images/svg/icon-eclairage.svg'
+import iconIncident from '../../images/svg/icon-incident.svg'
+import iconRefuge from '../../images/svg/icon-refuge.svg'
+import iconEclairage from '../../images/svg/icon-eclairage.svg'
 
 function Filters() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Journeys.css'
+import '../../style/Journeys.css'
 
 function MyJourneys() {
   return (

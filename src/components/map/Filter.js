@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Filter.css'
+import '../../style/Filter.css'
 
 function Filter({icon, libelle, CssClass}) {
   return (
