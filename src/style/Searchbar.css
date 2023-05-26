@@ -29,16 +29,8 @@
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9); 
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9);
 }
-.searchbar ul {
-    position: fixed;
-    top: 0;
-    background-color: black;
-    margin: 0;
-    z-index: -1;
-}
-.searchbar ul li:first-child {
-    padding-top: 8rem;
-}
+
 .searchbar ul li {
-    padding: .5rem 2rem;
+    padding: .5rem 0;
 }
+

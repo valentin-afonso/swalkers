@@ -1,36 +1,27 @@
 import React, { useState } from 'react';
 import { getAddress } from "../../api/getAddress"
 import '../../style/Searchbar.css';
+import ListAddress from './ListAddress';
+import ListDestinationGeneral from './ListDestinationGeneral';
 
-function Searchbar() {
+
+function Searchbar({setStep, step, setDestinationGeneralSelected}) {
   const [address, setAddress] = useState('');
   const [autocompleteData, setAutocompleteData] = useState([]);
-
-  const handleSelect = (value, item) => {
-    // setAddress(value);
-
-    // Effectuer le géocodage ici en utilisant l'API Nominatim et l'adresse sélectionnée (item)
-    // Par exemple, vous pouvez effectuer une requête HTTP GET à l'URL suivante :
-    // `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(item.label)}&format=json`
-    // Le résultat de la requête fournira les coordonnées de l'adresse sélectionnée
-  };
+  const [destinationSelected, setDestinationSelected] = useState([]);
 
   const handleChange = (event) => {
     setAddress(event.target.value);
-    console.log(address.length)
     if (address.length >= 2) {
       getAddress(address).then(items => {
         setAutocompleteData(items)
-        console.log(autocompleteData)
       });
     }
     if (address.length < 2) {
       setAutocompleteData([])
     }
   };
-  const listAddress = autocompleteData.map((item, index) =>
-  <li key={index}>{item}</li>
-);
+  const listAddress = autocompleteData;
   return (
     
     <div className="searchbar">
@@ -38,13 +29,27 @@ function Searchbar() {
         <input 
           type="text" 
           placeholder='Ou allez-vous ?' 
-          value={address}
+          value={step === 3 ? destinationSelected.name : address}
           onChange={handleChange}
-          onSelect={handleSelect}
+          onClick={() => setStep(2)}
         />
-        <ul>
-          {listAddress}
-        </ul>
+
+        <ListAddress 
+          listAddress={listAddress} 
+          setDestinationSelected={setDestinationSelected}
+          step={step}
+          setStep={setStep}
+        />
+
+        {step === 3 &&
+          <ListDestinationGeneral 
+            destinationSelected={destinationSelected}
+            setDestinationGeneralSelected={setDestinationGeneralSelected}
+            step={step}
+            setStep={setStep}
+          />
+        }
+        
     </div>
   );
 }
