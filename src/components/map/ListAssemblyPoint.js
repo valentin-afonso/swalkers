@@ -1,24 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../../style/ListAssemblyPoint.css'
-import { getAssemblyPoint } from "../../api/getAssemblyPoint"
 import AssemblyPoint from './AssemblyPoint';
+import iconChevron from '../../images/svg/icon-chevron.svg'
 
-function ListAssemblyPoint({destinationSelected, destinationGeneralSelected}) {
+function ListAssemblyPoint({assemblyPoint}) {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [assemblyPoint, setAssemblyPoint] = useState([]);
-    useEffect(() => {
-        getAssemblyPoint(destinationGeneralSelected.id).then(item => {
-            console.log(item)
-            setAssemblyPoint(item)
-        });
-    }, [destinationGeneralSelected]);
+  const open = () => { 
+    if (isOpen) {
+        setIsOpen(false)
+    } else {
+        setIsOpen(true)
+    }
+  };
 
+  // {"list_address " + (step === 2 ? 'active' : '')}
   return (
-    <div className='list_assembly_point'>
-        <header>Voir tous les trajets</header>
+    <div className={'list_assembly_point '+ (isOpen ? 'open' : '')}>
+        <header>Voir tous les trajets
+            <img 
+                src={iconChevron} 
+                className='chevron' 
+                alt="ouvrir" 
+                onClick={() => open()}
+            />
+        </header>
         <div className='content'>
-            <p>Destination général : {destinationGeneralSelected.id}</p>
-            <p>Destination final : {destinationSelected.name}</p>
+       
         </div>
         <ul>
           {assemblyPoint.map((item, index) => (

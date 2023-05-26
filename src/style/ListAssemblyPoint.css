@@ -1,18 +1,32 @@
 .list_assembly_point {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: calc((22.7rem)*(-1));
     width: 100%;
     background-color: var(--primary-color);
+    z-index: 1;
+    transition: all .4s;
+}
+.list_assembly_point.open {
+    bottom: 0;
+}
+.list_assembly_point.open header img {
+    transform: rotate(180deg);
 }
 .list_assembly_point header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 6rem;
+    padding: 0 1rem;
 }
-.list_assembly_point .content {
+.list_assembly_point header img {
+    margin-left: 1rem;
+}
+.list_assembly_point ul {
     padding: 1rem;
+    height: 22.7rem;
+    overflow-y: scroll;
 }
 
 .list_assembly_point ul li {

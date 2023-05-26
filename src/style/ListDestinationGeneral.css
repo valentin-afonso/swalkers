@@ -19,3 +19,7 @@
     transform: translateX(0);
     transition: all .5s;
 }
+.list_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}

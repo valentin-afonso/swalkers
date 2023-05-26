@@ -19,7 +19,7 @@ function ListDestinationGeneral({destinationSelected, setDestinationGeneralSelec
       };
   return (
     <div className={"list_destination_general " + (step === 3 ? 'active' : '')}>
-        <p>Ce déplacer à plusieurs jusqu’à :</p>
+        <p className='list_title'>Ce déplacer à plusieurs jusqu’à :</p>
         <ul>
           {destinationGeneral.map((item, index) => (
             <li key={index} onClick={() => handleSelect(item)}>{item.name}</li>

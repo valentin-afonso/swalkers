@@ -3,14 +3,12 @@ import { getAddress } from "../../api/getAddress"
 import '../../style/Searchbar.css';
 import ListAddress from './ListAddress';
 import ListDestinationGeneral from './ListDestinationGeneral';
-import ListAssemblyPoint from './ListAssemblyPoint';
 
-function Searchbar() {
-  const [step, setStep] = useState(1);
+
+function Searchbar({setStep, step, setDestinationGeneralSelected}) {
   const [address, setAddress] = useState('');
   const [autocompleteData, setAutocompleteData] = useState([]);
   const [destinationSelected, setDestinationSelected] = useState([]);
-  const [destinationGeneralSelected, setDestinationGeneralSelected] = useState([]);
 
   const handleChange = (event) => {
     setAddress(event.target.value);
@@ -51,12 +49,7 @@ function Searchbar() {
             setStep={setStep}
           />
         }
-        {step === 4 &&
-          <ListAssemblyPoint 
-            destinationSelected={destinationSelected}
-            destinationGeneralSelected={destinationGeneralSelected}
-          />
-        } 
+        
     </div>
   );
 }

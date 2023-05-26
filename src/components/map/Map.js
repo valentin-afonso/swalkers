@@ -3,8 +3,9 @@ import '../../style/Map.css'
 
 import { MapContainer, TileLayer } from 'react-leaflet'
 import LocationMarker from './LocationMarker';
+import AssemblyPointMarker from './AssemblyPointMarker';
 
-function Map() {
+function Map({assemblyPoint}) {
     const [position, setPosition] = useState(null);
     /*
     useMapEvents({
@@ -13,6 +14,7 @@ function Map() {
         },
     })
     */
+
     useEffect(() => {
         const getPosition = () => {
           navigator.geolocation.watchPosition(
@@ -34,6 +36,7 @@ function Map() {
         getPosition();
       }, []);
 
+
         
         /*
         //stop watching after 10 seconds
@@ -54,6 +57,14 @@ function Map() {
                 url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"
             />
             <LocationMarker position={position} />
+            {assemblyPoint.map((item, index) => (
+            <li key={index}>
+                <AssemblyPointMarker 
+                  position={[item.coord.lat, item.coord.lon]}
+                  timer={item.timer}
+                />
+            </li>
+          ))}
         </MapContainer>
         )}
     </div>
