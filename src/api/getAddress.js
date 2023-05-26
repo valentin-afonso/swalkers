@@ -5,7 +5,14 @@ export async function getAddress(address) {
     
 
     addressJson.forEach(function(item){
-        arrayAddress.push(item.display_name);
+        const address = {
+            "coord": [{
+                'lat': item.lat,
+                'long': item.lon
+            }],
+            'name': item.display_name
+        }
+        arrayAddress.push(address);
     });
     return arrayAddress
 }

@@ -1,0 +1,21 @@
+.list_destination_general {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    z-index: -1;
+    overflow-y: scroll;
+    opacity: 0;
+    transform: translateX(100vw);
+    transition: all .5s;
+    padding: 8rem 2rem 5rem 2rem;
+}
+
+.list_destination_general.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .5s;
+}

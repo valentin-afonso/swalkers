@@ -5,6 +5,8 @@ import Filters from '../map/Filters';
 import Searchbar from '../map/Searchbar';
 
 function Home() {
+
+  
   return (
     <div className='home'>
          <header className="header">

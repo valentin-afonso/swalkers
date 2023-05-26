@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Place du Commerce",
+        "address": "Place du Commerce, 44000 Nantes",
+        "coord": {
+            "lat": 47.217175,
+            "lon": -1.557600
+        }
+    },
+    {
+        "id": 2,
+        "name": "Place Graslin",
+        "address": "Place Graslin, 44000 Nantes",
+        "coord": {
+            "lat": 47.214995,
+            "lon": -1.563361
+        }
+    },
+    {
+        "id": 3,
+        "name": "Place Royale",
+        "address": "Place Royale, 44000 Nantes",
+        "coord": {
+            "lat": 47.213334,
+            "lon": -1.560148
+        }
+    },
+    {
+        "id": 4,
+        "name": "Place du Bouffay",
+        "address": "Place du Bouffay, 44000 Nantes",
+        "coord": {
+            "lat": 47.215103,
+            "lon": -1.555301
+        }
+    },
+    {
+        "id": 5,
+        "name": "Place Foch",
+        "address": "Place Foch, 44000 Nantes",
+        "coord": {
+            "lat": 47.218354,
+            "lon": -1.559307
+        }
+    },
+    {
+        "id": 6,
+        "name": "Place Maréchal-Foch",
+        "address": "Place Maréchal-Foch, 44000 Nantes",
+        "coord": {
+            "lat": 47.217274,
+            "lon": -1.559814
+        }
+    },
+    {
+        "id": 7,
+        "name": "Place Mellinet",
+        "address": "Place Mellinet, 44000 Nantes",
+        "coord": {
+            "lat": 47.219548,
+            "lon": -1.558905
+        }
+    },
+    {
+        "id": 8,
+        "name": "Place Viarme",
+        "address": "Place Viarme, 44000 Nantes",
+        "coord": {
+            "lat": 47.228044,
+            "lon": -1.563564
+        }
+    },
+    {
+        "id": 9,
+        "name": "Place du Pilori",
+        "address": "Place du Pilori, 44000 Nantes",
+        "coord": {
+            "lat": 47.216502,
+            "lon": -1.554823
+        }
+    },
+    {
+        "id": 10,
+        "name": "Place du Change",
+        "address": "Place du Change, 44000 Nantes",
+        "coord": {
+            "lat": 47.214272,
+            "lon": -1.554691
+        }
+    },
+    {
+        "id": 11,
+        "name": "Place Bretagne",
+        "address": "Place Bretagne, 44000 Nantes",
+        "coord": {
+            "lat": 47.208135,
+            "lon": -1.572169
+        }
+    },
+    {
+        "id": 12,
+        "name": "Place Zola",
+        "address": "Place Zola, 44000 Nantes",
+        "coord": {
+            "lat": 47.216596,
+            "lon": -1.549599
+        }
+    },
+    {
+        "id": 13,
+        "name": "Place du Port Communeau",
+        "address": "Place du Port Communeau, 44200 Nantes",
+        "coord": {
+            "lat": 47.214243,
+            "lon": -1.558913
+        }
+    },
+    {
+        "id": 14,
+        "name": "Place du Général-Mellinet",
+        "address": "Place du Général-Mellinet, 44000 Nantes",
+        "coord": {
+            "lat": 47.212577,
+            "lon": -1.553609
+        }
+    },
+    {
+        "id": 15,
+        "name": "Place René-Bouhier",
+        "address": "Place René-Bouhier, 44000 Nantes",
+        "coord": {
+            "lat": 47.214779,
+            "lon": -1.558672
+        }
+    },
+    {
+        "id": 16,
+        "name": "Place du Sanitat",
+        "address": "Place du Sanitat, 44000 Nantes",
+        "coord": {
+            "lat": 47.224439,
+            "lon": -1.572413
+        }
+    },
+    {
+        "id": 17,
+        "name": "Place de l'Édit-de-Nantes",
+        "address": "Place de l'Édit-de-Nantes, 44000 Nantes",
+        "coord": {
+            "lat": 47.210532,
+            "lon": -1.554383
+        }
+    },
+    {
+        "id": 18,
+        "name": "Place Cambronne",
+        "address": "Place Cambronne, 44000 Nantes",
+        "coord": {
+            "lat": 47.212375,
+            "lon": -1.555730
+        }
+    },
+    {
+        "id": 19,
+        "name": "Place du Cirque",
+        "address": "Place du Cirque, 44000 Nantes",
+        "coord": {
+            "lat": 47.209509,
+            "lon": -1.560937
+        }
+    },
+    {
+        "id": 20,
+        "name": "Place du Bouffay",
+        "address": "Place du Bouffay, 44000 Nantes",
+        "coord": {
+            "lat": 47.215103,
+            "lon": -1.555301
+        }
+    }
+]

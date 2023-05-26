@@ -1,0 +1,20 @@
+.list_assembly_point {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.list_assembly_point header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+.list_assembly_point .content {
+    padding: 1rem;
+}
+
+.list_assembly_point ul li {
+    padding: 1rem 0;
+}

@@ -1,0 +1,14 @@
+.assembly_point {
+    position: relative;
+    display: inline-block;
+}
+.assembly_point .timer {
+    background-color: var(--color-red);
+    color: var(--text-light-color);
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 5rem;
+    position: absolute;
+    left: 22px;
+    bottom: -12px;
+}
