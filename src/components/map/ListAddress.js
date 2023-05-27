@@ -9,6 +9,15 @@ function ListAddress({listAddress, setDestinationSelected, step, setStep}) {
         setStep(3)
         console.log(item)
       };
+      const short = (str, length) => {
+        if (str.length <= length) {
+            return str; 
+        } else {
+            var shortStr = str.substring(0, length); 
+            shortStr += "..."; 
+            return shortStr;
+        }
+      };
   return (
     <div className={"list_address " + (step === 2 ? 'active' : '')}>
       <p className='list_title'>Où voulez-vous aller ?</p>
@@ -18,7 +27,7 @@ function ListAddress({listAddress, setDestinationSelected, step, setStep}) {
               <div className='content_icon'>
                 <img src={iconPin} className='icon-pin' alt="address" width="13" height="17"/>
               </div>
-              <p className='content_text'>{item.name}</p>    
+              <p className='content_text'>{short(item.name, 50)}</p>    
             </li>
           ))}
         </ul>
