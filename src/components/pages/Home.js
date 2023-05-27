@@ -28,7 +28,9 @@ function Home() {
               step={step}
               setDestinationGeneralSelected={setDestinationGeneralSelected}
             />
-            <Filters />
+            {step !== 4 &&
+              <Filters />
+            }
           </header>
           <AlerteButton 
             menuAlerteOpen={menuAlerteOpen}
