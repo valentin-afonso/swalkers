@@ -1,0 +1,16 @@
+.resumebar {
+    display: flex;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    padding: 11px 20px;
+}
+.resumebar .part-one,
+.resumebar .part-two,
+.resumebar .part-three {
+    display: flex;
+}
+.resumebar .separator img {
+    transform: rotate(90deg);
+    width: 25px;
+    height: 25px;
+}

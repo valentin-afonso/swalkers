@@ -28,6 +28,13 @@ function Home() {
         });
     }, [destinationGeneralSelected]);
 
+    useEffect(() => {
+      if (step === 4) {
+        setActiveFilterLight(false)
+        setActiveFilterRefuge(false)
+        setActiveFilterIncident(false)
+      }
+  }, [step]);
 
   return (
     <div className='home'>

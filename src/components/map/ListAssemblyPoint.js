@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../style/ListAssemblyPoint.css'
 import AssemblyPoint from './AssemblyPoint';
 import iconChevron from '../../images/svg/icon-chevron.svg'
+import ResumeBar from './ResumeBar';
 
 function ListAssemblyPoint({assemblyPoint}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ function ListAssemblyPoint({assemblyPoint}) {
                 <AssemblyPoint 
                     timer={item.timer}
                 />
+                <ResumeBar />
             </li>
           ))}
         </ul>
