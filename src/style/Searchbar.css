@@ -1,4 +1,4 @@
-.searchbar {
+.searchbar_controller {
     position: fixed;
     top: 52px;
     z-index: 2;
@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
 }
-.searchbar::before {
+/*
+.searchbar_controller::before {
     content: "";
     background: url('../images/svg/icon-search.svg');
     background-repeat: no-repeat;
@@ -17,20 +18,35 @@
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
-}
-.searchbar input[type="text"] {
-    width: 90%;
-    border-radius: 10rem;
-    padding: 10px 10px 10px 53px;
-    border: none;
+}*/
+.searchbar_controller .searchbar {
+    display: flex;
+    align-items: center;
     background-color: var(--primary-color);
-    color: rgba(255, 255, 255, .66);
-    font-size: 1rem;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9); 
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9);
+    width: 90%;
+    border-radius: 10rem;
+    padding: 0 1rem;
+
+}
+.searchbar_controller .searchbar input[type="text"] {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    color: rgba(255, 255, 255, .66);
+    font-size: 1rem;
 }
 
-.searchbar ul li {
+.searchbar_controller .searchbar ul li {
     padding: .5rem 0;
 }
 
+.searchbar_controller .searchbar .icon_search,
+.searchbar_controller .searchbar .icon_back {
+    width: 24px;
+    height: 24px;
+}
+.searchbar_controller .searchbar .icon_back {
+    transform: rotate(270deg);
+}

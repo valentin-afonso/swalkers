@@ -25,7 +25,8 @@
 .list_address ul li {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 10px 0;
 }
 .list_address ul li .content_icon {
     background-color: rgba(255, 255, 255, .12);
