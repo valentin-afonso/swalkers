@@ -1,6 +1,7 @@
 .filter {
     display: flex;
-    padding: 10px 6px;
+    background-color: var(--primary-color);
+    padding: 10px;
     border-radius: 10rem;
     margin: 0 10px;
     font-size: .9rem;
@@ -8,17 +9,21 @@
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9); 
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.9);
 }
+
 .filter_icon {
     margin-right: 5px;
 }
-.filter.eclairage {
+.filter.eclairage.active {
     background-color: var(--color-yellow);
     color: black;
 }
-.filter.incident {
+.filter.incident.active {
     background-color: var(--color-red);
     color: var(--text-light-color);
 }
-.filter.refuge {
+.filter.refuge.active {
     background-color: var(--color-blue);
+}
+.filter .filter_libelle {
+    line-height: 1.5;
 }

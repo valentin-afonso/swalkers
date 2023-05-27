@@ -1,14 +1,12 @@
 import React from 'react';
 import { Marker, Popup } from 'react-leaflet';
 
-
 import L from 'leaflet';
-import AssemblyPointDetails from './AssemblyPointDetails';
 
-function AssemblyPointMarker({position, timer}) {
+function IncidentPointMarker({position}) {
     const icon = new L.Icon({
-        iconUrl: require('../../images/icon-assembly-point.png'),
-        iconRetinaUrl: require('../../images/icon-assembly-point.png'),
+        iconUrl: require('../../images/marker-filter-incident.png'),
+        iconRetinaUrl: require('../../images/marker-filter-incident.png'),
         iconAnchor: [22, 94],
         popupAnchor: [-3, -76],
         shadowUrl: null,
@@ -20,12 +18,10 @@ function AssemblyPointMarker({position, timer}) {
       return position ? (
         <Marker position={position} icon={icon}>
           <Popup>
-            <AssemblyPointDetails
-              timer={timer}
-            /> 
+            incident
           </Popup>
         </Marker>
       ) : null;
 }
 
-export default AssemblyPointMarker
+export default IncidentPointMarker

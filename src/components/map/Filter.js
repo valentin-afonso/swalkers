@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import '../../style/Filter.css'
 
-function Filter({icon, libelle, CssClass}) {
+function Filter({icon, libelle, CssClass, onClick}) {
   return (
-    <div className={ `filter ${CssClass}` }>
+    <div className={ `filter ${CssClass}` } onClick={onClick}>
         <img src={icon} className="filter_icon" alt="icon" />
         <span className='filter_libelle'>{libelle}</span>
     </div>

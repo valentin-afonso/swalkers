@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "type": "Agression",
+        "level_aprob": 0.5,
+        "coord": {
+            "lat": 47.208982,
+            "lon": -1.548901
+        }
+    }
+]
