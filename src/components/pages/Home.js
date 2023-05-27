@@ -5,11 +5,14 @@ import Filters from '../map/Filters';
 import Searchbar from '../map/Searchbar';
 import ListAssemblyPoint from '../map/ListAssemblyPoint';
 import { getAssemblyPoint } from "../../api/getAssemblyPoint"
+import AlerteButton from '../map/AlerteButton';
+import AlerteMenu from '../map/AlerteMenu';
 
 function Home() {
   const [step, setStep] = useState(1);
   const [destinationGeneralSelected, setDestinationGeneralSelected] = useState([]);
   const [assemblyPoint, setAssemblyPoint] = useState([]);
+  const [menuAlerteOpen, setMenuAlerteOpen] = useState(false);
 
     useEffect(() => {
         getAssemblyPoint(destinationGeneralSelected.id).then(item => {
@@ -25,8 +28,15 @@ function Home() {
               step={step}
               setDestinationGeneralSelected={setDestinationGeneralSelected}
             />
-            <Filters />
+            {step !== 4 &&
+              <Filters />
+            }
           </header>
+          <AlerteButton 
+            menuAlerteOpen={menuAlerteOpen}
+            setMenuAlerteOpen={setMenuAlerteOpen}
+          />
+          <AlerteMenu menuAlerteOpen={menuAlerteOpen}/>
           <Map 
             assemblyPoint={assemblyPoint}
           />

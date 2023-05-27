@@ -1,0 +1,43 @@
+.call_emergency {
+    padding: 2rem 1rem;
+    height: 100vh;
+}
+.call_emergency .content_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.call_emergency .content_top h1 {
+    margin: 0;
+}
+.call_emergency .contact_list {
+    margin: 2rem 0;
+}
+.call_emergency .contact_list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .25);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.call_emergency .contact_list ul li img {
+    transform: rotate(90deg);
+    width: 30px;
+    height: 30px;
+}
+.call_emergency .call_button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8rem;
+    left: 0;
+    width: 100%;
+}
+.call_emergency .call_button p {
+    padding: 10px 16px;
+    background-color: var(--color-red);
+    border-radius: 7px;
+}

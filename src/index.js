@@ -14,6 +14,10 @@ const Home = lazy(() => import('./components/pages/Home'));
 const Params = lazy(() => import('./components/pages/Params'));
 const MyJourneys = lazy(() => import('./components/pages/MyJourneys'));
 const Profile = lazy(() => import('./components/pages/Profile'));
+const CallEmergency = lazy(() => import('./components/pages/CallEmergency'));
+const MessageEmergency = lazy(() => import('./components/pages/MessageEmergency'));
+const NewMessage = lazy(() => import('./components/pages/NewMessage.js'));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -24,6 +28,10 @@ root.render(
       <Route path="/my-journeys" element={<MyJourneys />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/params" element={<Params />} />
+      <Route path="/call" element={<CallEmergency />} />
+      <Route path="/message" element={<MessageEmergency />} />
+      <Route path="/incident" element={<MessageEmergency />} />
+      <Route path="/new-message" element={<NewMessage />} />
     </Routes>
     <Navbar />
    </Suspense>

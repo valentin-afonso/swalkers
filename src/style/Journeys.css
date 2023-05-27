@@ -1,0 +1,25 @@
+.journey {
+    padding: 1rem;
+}
+.journey .content_destinations {
+    display: flex;
+    align-items: center;
+}
+.journey .content_destinations .general,
+.journey .content_destinations .final {
+    display: flex;
+}
+.journey .content_destinations .general img,
+.journey .content_destinations .final img
+ {
+    margin-right: 10px;
+}
+.journey .content_destinations .separator {
+    margin: 0 1rem;
+}
+.journey .content_destinations .separator img {
+    width: 40px;
+}
+.journey .content_image img {
+    width: 100%;
+}
