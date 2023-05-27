@@ -8,3 +8,12 @@ SWALKERS a pour ambition de favoriser la sécurité et la tranquillité des util
 En prônant l’idée qu’ensemble nous sommes plus forts, son objectif est de réduire les incidents en encourageant la solidarité entre les utilisateurs et en offrants l’itinéraire le plus sécurisé possible.
 
 Découvrez __SWALKERS__ [👉  ici !](https://swalkers.netlify.app/)
+
+### Informations supplémentaires
+📌 __Votre localisation__  
+Dans le cadre de la présentation de l'application, les données relatives à la localisation des points de rassemblement et des autres utilisateurs sont disponibles uniquement pour la ville de Nantes. Ainsi, pour une meilleure expérience, si la fonctionnalité de localisation n'est pas activée, elle sera automatiquement réglée sur Nantes. Il peut donc être préférable de la désactiver.
+
+🚀 __Technos utilisées__  
+Le projet est développé en React. Actuellement, les données sont gérées dans des fichiers JSON, mais elles seront prochainement stockées sur Firebase.
+
+
