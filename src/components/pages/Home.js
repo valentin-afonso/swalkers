@@ -7,10 +7,12 @@ import ListAssemblyPoint from '../map/ListAssemblyPoint';
 import { getAssemblyPoint } from "../../api/getAssemblyPoint"
 import AlerteButton from '../map/AlerteButton';
 import AlerteMenu from '../map/AlerteMenu';
+import RecapSearchBar from '../map/RecapSearchBar';
 
 function Home() {
   const [step, setStep] = useState(1);
   const [destinationGeneralSelected, setDestinationGeneralSelected] = useState([]);
+  const [destinationSelected, setDestinationSelected] = useState([]);
   const [assemblyPoint, setAssemblyPoint] = useState([]);
   const [menuAlerteOpen, setMenuAlerteOpen] = useState(false);
 
@@ -23,13 +25,24 @@ function Home() {
   return (
     <div className='home'>
          <header className="header">
+         {step !== 4 &&
             <Searchbar 
               setStep={setStep}
               step={step}
+              destinationSelected={destinationSelected}
+              setDestinationSelected={setDestinationSelected}
               setDestinationGeneralSelected={setDestinationGeneralSelected}
             />
+         }
             {step !== 4 &&
               <Filters />
+            }
+            {step === 4 &&
+              <RecapSearchBar 
+                setStep={setStep}
+                destinationSelected={destinationSelected}
+                destinationGeneralSelected={destinationGeneralSelected}
+              />
             }
           </header>
           <AlerteButton 

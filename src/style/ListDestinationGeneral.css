@@ -23,3 +23,40 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.list_destination_general ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 1rem 0;
+}
+.list_destination_general ul li .content_icon {
+    background-color: rgba(255, 255, 255, .12);
+    margin-right: 10px;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+.list_destination_general ul li .content_text {
+    max-width: 18rem;
+}
+.list_destination_general ul li .time {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+.list_destination_general ul li .time::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../images/svg/icon-walk.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    bottom: 3px;
+}
