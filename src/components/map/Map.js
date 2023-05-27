@@ -4,8 +4,10 @@ import '../../style/Map.css'
 import { MapContainer, TileLayer } from 'react-leaflet'
 import LocationMarker from './LocationMarker';
 import AssemblyPointMarker from './AssemblyPointMarker';
+import IncidentPointMarker from './IncidentPointMarker';
+import RefugePointMarker from './RefugePointMarker';
 
-function Map({assemblyPoint}) {
+function Map({assemblyPoint, incidentsPoint, refugesPoint, activeFilterLight, activeFilterRefuge, activeFilterIncident }) {
     const [position, setPosition] = useState(null);
     /*
     useMapEvents({
@@ -62,6 +64,22 @@ function Map({assemblyPoint}) {
                 <AssemblyPointMarker 
                   position={[item.coord.lat, item.coord.lon]}
                   timer={item.timer}
+                />
+            </li>
+          ))}
+    
+            {activeFilterIncident &&incidentsPoint.map((item, index) => (
+              <li key={index}>
+                  <IncidentPointMarker 
+                    position={[item.coord.lat, item.coord.lon]}
+                  />
+              </li>
+            ))}
+      
+          {activeFilterRefuge && refugesPoint.map((item, index) => (
+            <li key={index}>
+                <RefugePointMarker 
+                  position={[item.coord.lat, item.coord.lon]}
                 />
             </li>
           ))}

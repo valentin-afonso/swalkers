@@ -16,11 +16,18 @@ function Home() {
   const [assemblyPoint, setAssemblyPoint] = useState([]);
   const [menuAlerteOpen, setMenuAlerteOpen] = useState(false);
 
+  const [activeFilterLight, setActiveFilterLight] = useState(false);
+  const [activeFilterRefuge, setActiveFilterRefuge] = useState(false);
+  const [activeFilterIncident, setActiveFilterIncident] = useState(false);
+  const [incidentsPoint, setIncidentsPoint] = useState([]);
+  const [refugesPoint, setRefugesPoint] = useState([]);
+
     useEffect(() => {
         getAssemblyPoint(destinationGeneralSelected.id).then(item => {
             setAssemblyPoint(item)
         });
     }, [destinationGeneralSelected]);
+
 
   return (
     <div className='home'>
@@ -35,7 +42,16 @@ function Home() {
             />
          }
             {step !== 4 &&
-              <Filters />
+              <Filters 
+                activeFilterLight={activeFilterLight}
+                activeFilterRefuge={activeFilterRefuge}
+                activeFilterIncident={activeFilterIncident}
+                setActiveFilterLight={setActiveFilterLight}
+                setActiveFilterIncident={setActiveFilterIncident}
+                setActiveFilterRefuge={setActiveFilterRefuge}
+                setIncidentsPoint={setIncidentsPoint}
+                setRefugesPoint={setRefugesPoint}
+              />
             }
             {step === 4 &&
               <RecapSearchBar 
@@ -52,6 +68,11 @@ function Home() {
           <AlerteMenu menuAlerteOpen={menuAlerteOpen}/>
           <Map 
             assemblyPoint={assemblyPoint}
+            incidentsPoint={incidentsPoint}
+            refugesPoint={refugesPoint}
+            activeFilterLight={activeFilterLight}
+            activeFilterRefuge={activeFilterRefuge}
+            activeFilterIncident={activeFilterIncident}
           />
           {step === 4 &&
           <ListAssemblyPoint 
