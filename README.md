@@ -1,6 +1,6 @@
 <img src="https://github.com/valentin-afonso/swalkers/assets/74588309/f364af80-6d2a-4b00-9076-e69fc2ceaa6c.jpg" alt="my banner" >
 
-## <p align="center">SWALKERS 🔥</p>
+## <p align="center">SWALKERS 🗺️</p>
 <p align="center">Projet PFE - Valentin AFONSO</p>
 
 ### Le projet en quelque mots
