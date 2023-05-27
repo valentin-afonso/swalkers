@@ -1,0 +1,18 @@
+.alerte_menu {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--primary-color);
+    padding: 75px 20px 30px 20px;
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+    transform: translateY(100%);
+    transition: all .4s;
+}
+.alerte_menu.open {
+    transform: translateY(0);
+}
+.alerte_menu ul li {
+    padding: 10px 0;
+}

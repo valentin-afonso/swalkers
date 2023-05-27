@@ -1,0 +1,23 @@
+.toggle {
+    width: 57px;
+    min-width: 57px;
+    height: 24px;
+    background-color: var(--text-light-color);
+    border-radius: 10rem;
+    position: relative;
+}
+.toggle_switch {
+    width: 28px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    background-color: var(--primary-color);
+    border-radius: 10rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+}
+.toggle_switch.active {
+    left: 24px;
+}
