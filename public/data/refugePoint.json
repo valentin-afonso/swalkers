@@ -1,10 +1,162 @@
 [
     {
         "id": 1,
-        "name": "Bar ...",
+        "name": "Bar L'Équateur",
         "coord": {
             "lat": 47.219874,
             "lon": -1.561462
+        }
+    },
+    {
+        "id": 2,
+        "name": "Café Le Central",
+        "coord": {
+            "lat": 47.212346,
+            "lon": -1.559871
+        }
+    },
+    {
+        "id": 3,
+        "name": "Restaurant La Belle Époque",
+        "coord": {
+            "lat": 47.215678,
+            "lon": -1.563245
+        }
+    },
+    {
+        "id": 4,
+        "name": "Boulangerie Le Petit Pain",
+        "coord": {
+            "lat": 47.220103,
+            "lon": -1.568934
+        }
+    },
+    {
+        "id": 5,
+        "name": "Supermarché Le Marché Frais",
+        "coord": {
+            "lat": 47.217890,
+            "lon": -1.567319
+        }
+    },
+    {
+        "id": 6,
+        "name": "Pharmacie Sainte-Marie",
+        "coord": {
+            "lat": 47.214562,
+            "lon": -1.556721
+        }
+    },
+    {
+        "id": 7,
+        "name": "Librairie L'Encre Magique",
+        "coord": {
+            "lat": 47.218756,
+            "lon": -1.553908
+        }
+    },
+    {
+        "id": 8,
+        "name": "Cinéma Le Rêve Étoilé",
+        "coord": {
+            "lat": 47.215431,
+            "lon": -1.558310
+        }
+    },
+    {
+        "id": 9,
+        "name": "Salon de coiffure Le Style Unique",
+        "coord": {
+            "lat": 47.221982,
+            "lon": -1.558945
+        }
+    },
+    {
+        "id": 10,
+        "name": "Boutique de vêtements La Mode Élégante",
+        "coord": {
+            "lat": 47.219774,
+            "lon": -1.564309
+        }
+    },
+    {
+        "id": 11,
+        "name": "Boucherie La Bonne Viande",
+        "coord": {
+            "lat": 47.222086,
+            "lon": -1.560211
+        }
+    },
+    {
+        "id": 12,
+        "name": "Café Le Jardin Secret",
+        "coord": {
+            "lat": 47.221043,
+            "lon": -1.566777
+        }
+    },
+    {
+        "id": 13,
+        "name": "Pâtisserie Le Délice Sucré",
+        "coord": {
+            "lat": 47.216887,
+            "lon": -1.555609
+        }
+    },
+    {
+        "id": 14,
+        "name": "Épicerie Fine Le Panier Gourmand",
+        "coord": {
+            "lat": 47.219568,
+            "lon": -1.563409
+        }
+    },
+    {
+        "id": 15,
+        "name": "Bar Le Petit Bistro",
+        "coord": {
+            "lat": 47.216459,
+            "lon": -1.557419
+        }
+    },
+    {
+        "id": 16,
+        "name": "Boulangerie Le Croissant Doré",
+        "coord": {
+            "lat": 47.218235,
+            "lon": -1.559799
+        }
+    },
+    {
+        "id": 17,
+        "name": "Salon de thé Le Doux Plaisir",
+        "coord": {
+            "lat": 47.214793,
+            "lon": -1.554326
+        }
+    },
+    {
+        "id": 18,
+        "name": "Pharmacie La Fontaine",
+        "coord": {
+            "lat": 47.219108,
+            "lon": -1.566005
+        }
+    },
+    {
+        "id": 19,
+        "name": "Boutique de chaussures Le Chic Pied",
+        "coord": {
+            "lat": 47.216662,
+            "lon": -1.560985
+        }
+    },
+    {
+        "id": 20,
+        "name": "Café Le Coin Tranquille",
+        "coord": {
+            "lat": 47.218761,
+            "lon": -1.565109
         }
     }
 ]

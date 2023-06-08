@@ -7,5 +7,95 @@
             "lat": 47.208982,
             "lon": -1.548901
         }
+    },
+    {
+        "id": 2,
+        "type": "Agression",
+        "level_aprob": 0.3,
+        "coord": {
+            "lat": 47.213428,
+            "lon": -1.562896
+        }
+    },
+    {
+        "id": 3,
+        "type": "Agression",
+        "level_aprob": 0.7,
+        "coord": {
+            "lat": 47.218706,
+            "lon": -1.579168
+        }
+    },
+    {
+        "id": 4,
+        "type": "Agression",
+        "level_aprob": 0.9,
+        "coord": {
+            "lat": 47.217326,
+            "lon": -1.554700
+        }
+    },
+    {
+        "id": 5,
+        "type": "Agression",
+        "level_aprob": 0.6,
+        "coord": {
+            "lat": 47.213937,
+            "lon": -1.554915
+        }
+    },
+    {
+        "id": 6,
+        "type": "Agression",
+        "level_aprob": 0.8,
+        "coord": {
+            "lat": 47.202791,
+            "lon": -1.541453
+        }
+    },
+    {
+        "id": 7,
+        "type": "Agression",
+        "level_aprob": 0.2,
+        "coord": {
+            "lat": 47.200117,
+            "lon": -1.570303
+        }
+    },
+    {
+        "id": 8,
+        "type": "Agression",
+        "level_aprob": 0.4,
+        "coord": {
+            "lat": 47.219839,
+            "lon": -1.549567
+        }
+    },
+    {
+        "id": 9,
+        "type": "Agression",
+        "level_aprob": 0.6,
+        "coord": {
+            "lat": 47.228065,
+            "lon": -1.569422
+        }
+    },
+    {
+        "id": 10,
+        "type": "Agression",
+        "level_aprob": 0.7,
+        "coord": {
+            "lat": 47.223795,
+            "lon": -1.558940
+        }
+    },
+    {
+        "id": 11,
+        "type": "Agression",
+        "level_aprob": 0.8,
+        "coord": {
+            "lat": 47.213622,
+            "lon": -1.538324
+        }
     }
 ]
