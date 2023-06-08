@@ -21,6 +21,7 @@ function Home() {
   const [activeFilterIncident, setActiveFilterIncident] = useState(false);
   const [incidentsPoint, setIncidentsPoint] = useState([]);
   const [refugesPoint, setRefugesPoint] = useState([]);
+  // const [zoom, setZoom] = useState(1);
 
     useEffect(() => {
         getAssemblyPoint(destinationGeneralSelected.id).then(item => {
@@ -63,6 +64,7 @@ function Home() {
             {step === 4 &&
               <RecapSearchBar 
                 setStep={setStep}
+                setAssemblyPoint={setAssemblyPoint}
                 destinationSelected={destinationSelected}
                 destinationGeneralSelected={destinationGeneralSelected}
               />
