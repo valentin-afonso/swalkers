@@ -53,7 +53,7 @@ function Map({assemblyPoint, incidentsPoint, refugesPoint, activeFilterLight, ac
   return (
     <div id='map'>
         {position && (
-        <MapContainer center={position} zoom={17} scrollWheelZoom={false}>
+        <MapContainer center={position} zoom={14} scrollWheelZoom={false}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"

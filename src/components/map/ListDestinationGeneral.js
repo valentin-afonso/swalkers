@@ -22,13 +22,13 @@ function ListDestinationGeneral({destinationSelected, setDestinationGeneralSelec
     <div className={"list_destination_general " + (step === 3 ? 'active' : '')}>
         <p className='list_title'>Ce déplacer à plusieurs jusqu’à :</p>
         <ul>
-          {destinationGeneral.map((item, index) => (
+          {destinationGeneral.slice(0, 5).map((item, index) => (
             <li key={index} onClick={() => handleSelect(item)}>
               <div className='content_icon'>
                 <img src={iconPin} className='icon-pin' alt="address" width="13" height="17"/>
               </div>
               <p className='content_text'>{item.name}</p>    
-              <span className='time'>à 11min</span>
+              <span className='time'>à {index + 11}min</span>
             </li>
           ))}
         </ul>

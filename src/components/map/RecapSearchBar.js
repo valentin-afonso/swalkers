@@ -5,7 +5,7 @@ import IconSeparator from '../../images/svg/icon-separator.svg'
 import IconFlag from '../../images/svg/icon-flag.svg'
 import IconMarker from '../../images/svg/icon-marker.svg'
 
-function RecapSearchBar({setStep, destinationSelected, destinationGeneralSelected}) {
+function RecapSearchBar({setStep, setAssemblyPoint, destinationSelected, destinationGeneralSelected}) {
 
   const short = (str, length) => {
     if (str.length <= length) {
@@ -16,6 +16,10 @@ function RecapSearchBar({setStep, destinationSelected, destinationGeneralSelecte
         return shortStr;
     }
   };
+  const back= () => {
+    setStep(1)
+    setAssemblyPoint([])
+  }
   return (
     <div className='recap_searchbar'>
         <div className='content_top'>
@@ -23,7 +27,7 @@ function RecapSearchBar({setStep, destinationSelected, destinationGeneralSelecte
                 src={IconBack} 
                 className="icon_back" 
                 alt="back"  
-                onClick={() => setStep(1)}
+                onClick={() => back()}
             />
             <div className='destinations'>
                 <div className='general'>
